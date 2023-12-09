@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISK MANAGEMENT</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+
+		.wrapper::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+
+	
+		ul, ol {
+			list-style-position: inside;
+			margin-left: 1em;
+		}
+		ul {
+			list-style-type: none;
+		}
+		.tab {
+			display: inline-block;
+			margin-left: 1em;
+		}
+		.wrapper {
+			padding: 20px;
+			border: 1px solid #1d2c56;
+			text-align: center;
+		}
+		.middle {
+			float:left;
+			width: 70%;
+		}
+		.rightpanel {
+			float: left;
+			width: 30%;
+			padding-left: 10px;
+		}
+		ul span{
+			list-style-type: square;
+		}
+		h3 {
+			background-color: #465572;
+			opacity: 0.8;
+			border: 1px solid #1d2c56;
+			padding: 8px;
+			color: white;
+		}
+		@media screen and (max-width:1250px) {
+		   .rightpanel, .middle {
+		    width: 100%;
+		  }
+
+		}
+		@media screen and (max-width:770px) {
+			header h1 {
+				font-size: 28pt;
+			}
+				body {
+				font-size: 95%;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="page-header" >
+        
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-icon" for="toggle-menu">
+            <a id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </label>
+        
+        
+        <div id="navigation-bar" class="nav-bar">
+            <a href="main.html"> HOME </a>
+            <a href="background.html"> BACKGROUND </a>
+            <a class="active" href="risk.html"> RISK MANAGEMENT </a>
+            <a href="planning.html">PROJECT PLANNING </a>
+            <a href="estimates.html">COST</a>
+            <a href="citations.html">CITATIONS</a>
+        </div>   
+        </div>
+	
+	<header>
+		<h1>BENEFITS AND RISKS OF CLOUD MIGRATION</h1>
+	</header>
+	
+	 <div class="container">
+		<div class="wrapper">
+		
+	<div class="middle">
+
+	<main>
+		<h3><span>BENEFITS OF CLOUD MIGRATION</span></h3>
+		<ul><span>
+			<li>Cost savings on hardware and maintenance</li>
+			<li>Scalability and flexibility in resource allocation</li>
+			<li>Improved accessibility and collaboration</li>
+		</ul></span><br>
+		<h3><span>RISKS OF CLOUD MIGRATION</span></h3>
+		<ul>
+			<li><b>Data security and privacy concerns</b></li>
+			<p class="tab"> Moving to the cloud requires an expansion of trust boundaries
+				to include the external cloud. Overlapping of trust boundaries from different cloud customers
+				and increased exposure of data can cause vulnerabilities for attack.
+			</p><br><br>
+			<li><b>Reduced operational governance control</b></li>
+			<p class="tab">Cloud consumers are typically allotted lower governance control than for on-premise IT resources.
+				Cloud providers could also be unreliable and not follow the Service Level Agreements (SLAs),
+				affecting the quality of their services. Large location differences between the consumer and provider
+				can also create latency and bandwidth constraints. For all of these reasons, it is important that
+				cloud consumers keep track of the service they are receiving to ensure their requirements are being met.
+			</p><br><br>
+			<li><b>Limited portability between cloud providers</b></li>
+			<p class="tab">Portability refers to the ease of moving a cloud system or IT resources from one infrastructure to another.
+				This takes into account interoperability, which is the capacity of different cloud systems to interact with
+				each other through their technologies and interfaces.
+			</p><br><br>
+		</ul>
+	</main>
+	</div>
+	<div class="rightpanel">
+		<h3><span>RISK MITIGATION</span></h3>
+		<ol>
+			<b><li>Implementing robust encyrption and access control measures</li></b>
+			<p class="tab">
+				Multifactor authentication methods and encyrption of data can build 
+				a barrier against unauthorized access.
+			</p>
+			<b><li>Regular security assessments and monitoring</li></b>
+			<p class="tab">
+				Conducting periodic security assessments can provide insight into
+				potential weaknesess or vulnerabilities and allow for correction.
+			</p>
+			<b><li>Choose a reliable cloud service provider</li></b>
+			<p class="tab">
+				Evaulate a potential provider's credentials, certifications, and reputations to ensure
+				they are reliable and trustworthy.
+			</p>
+			<b><li>Compliance with Regulations</li></b>
+			<p class="tab">
+				Maintain compliance with regulatory standards to ensure your cloud strategies align with
+				global best practices.
+			</p>
+		</ol>
+	</div>
+
+    
+    </div>
+        
+    <footer>
+		<p style="padding-top: 30px">Handcrafted by Jenna Miller</p>
+	</footer>
+
+</div>
+   
+</body>
+</html>

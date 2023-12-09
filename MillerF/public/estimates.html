@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT ESTIMATES</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	
+		.wrapper::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	
+		
+		#estimate {
+			border-collapse: collapse;
+			width: 100%;
+			overflow: scroll;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		#estimate td, #estimate th {
+			border: 2px solid #1d2c56;
+			padding: 9px;
+		}
+
+		tfoot {
+			background-color: #91e7da;
+			opacity: 0.8;
+		}
+
+		#estimate th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #465572;
+			opacity:0.8;
+			color: white;
+		}
+
+		
+		
+		@media screen and (max-width:830px) {
+	
+		  #estimate {
+			  font-size: 60%;
+			  
+		  }
+		  body {
+			  font-size: 95%;
+		  }
+		  header h1 {
+			  font-size: 28pt;
+			}
+
+		}
+
+		ul, ol {
+			list-style-position: inside;
+			margin-left: 2em;
+			display: inline-block;
+			list-style-type: square;
+		}
+		.wrapper {
+			padding: 20px;
+			border: 1px solid #1d2c56;
+		}
+		h2 span {
+			background-color: #465572;
+			opacity: 0.8;
+			color: white;
+			padding-top: 10px;
+			padding-bottom:10px;
+		}
+		a {
+			text-decoration: none;
+			color:#465572;
+			font-weight:700;
+		}
+		.internal {
+			float: left;
+			padding-right:15px;
+		}
+		.cloud {
+			float: left;
+		}
+		.bottom {
+			float: left;
+			width: 100%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="page-header" >
+        
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-icon" for="toggle-menu">
+            <a id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </label>
+        
+        
+        <div id="navigation-bar" class="nav-bar">
+            <a href="main.html"> HOME </a>
+            <a href="background.html"> BACKGROUND </a>
+            <a href="risk.html"> RISK MANAGEMENT </a>
+            <a href="planning.html">PROJECT PLANNING </a>
+            <a class="active" href="estimates.html">COST</a>
+            <a href="citations.html">CITATIONS</a>
+        </div>   
+        </div>
+	
+	<header>
+		<h1>ESTIMATING CLOUD MIGRATION COSTS</h1>
+	</header>
+	
+	 <div class="container">
+		<div class="wrapper">
+		<h2 style="text-align:center">PROJECT ESTIMATES: COST OF CLOUD MIGRATION</h2><br>
+      
+      <h2><span>Cost Comparison: Internal Data Center vs. Cloud Services</span></h2><br>
+      <div class="comparison">
+		  <div class="internal">
+      <h3><span>Internal Data Center Costs</span></h3>
+      <ul>
+        <li>Hardware and infrastructure procurement</li>
+        <li>Facilities (electricity, cooling)</li>
+        <li>Staffing (administrators, maintenance)</li>
+        <li>Licensing and software</li>
+        <li>Real estate for server storage space</li>
+        <li>Productivity loss during downtime</li>
+        <li>Depreciation of hardware</li>
+        <li>Disaster recovery measures</li>
+      </ul><br></div>
+      <div class="cloud">
+      <h3><span>Cloud Services Costs</span></h3>
+      <ul>
+        <li>Subscription fees for compute, storage,<br> and networking</li>
+        <li>Data transfer and storage costs</li>
+        <li>Support and maintenance fees</li>
+        <li>Additional services (backup, security)</li>
+      </ul>
+      </div>
+      </div>
+      <div class="bottom">
+      <h3 style="padding-top: 10px;">Calculating Cloud Total Cost Ownership (TCO): </h3>
+      <p>Using <a href="https://calculator.aws/#/" target="_blank"> AWS pricing calculator</a>, we can calculate the 
+		  total cost over a 12 month period for utilizing:
+		
+		   Amazon Simple Storage Service (S3),
+		   Amazon RDS for SQL Server, and
+		   Amazon EC2.<br><br>
+		   
+		   <table id="estimate">
+			   <thead>
+			   <tr>
+				   <th>Service Name</th>
+				   <th>Upfront Cost</th>
+				   <th>Monthly Cost</th>
+				   <th>Region</th>
+				   <th>Configuration Summary</th>	   
+			   </tr>
+			   </thead>
+			   <tbody>
+			   <tr>
+				   <td>Amazon EC2</td>
+				   <td>0.00 USD</td>
+				   <td>149.06 USD</td>
+				   <td>US East (Ohio)</td>
+				   <td>Tenancy (Shared Instances), Operating system (Windows Server), Workload (Daily, (Workload days: Monday, Tuesday, Wednesday, Thursday, Friday, Baseline: 1, Peak: 2, Duration of peak: 8 Hr 0 Min)), Advance EC2 instance (t3a.medium), Pricing strategy (On-Demand), Enable monitoring (disabled), EBS Storage amount (30 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (500 GB per month)</td>	   
+			   </tr>			   
+			   <tr>
+				   <td>Amazon RDS for SQL Server</td>
+				   <td>0.00 USD</td>
+				   <td> 1,472.05 USD</td>
+				   <td> US East (Ohio)</td>
+				   <td>Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Number of nodes (1), Instance type (db.m4.large), Utilization (On-Demand only) (24 Hours/Day), Deployment option (Multi-AZ), License (License included), Database edition (Standard), Pricing strategy (OnDemand)</td>
+			   </tr>
+			   <tr>
+				   <td>Amazon Simple Storage Service (S3)</td>
+				   <td>0.00 USD</td>
+				   <td>51.64 USD</td>
+				   <td>US East (Ohio)</td>
+				   <td>S3 Standard storage (2 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (100000), GET, SELECT, and all other requests from S3 Standard (100000) DT Inbound: Internet (0 TB per month), DT Outbound: All other regions (200 GB per month)</td>
+			   </tr>
+			   </tbody>
+			   <tfoot>
+			   <tr>
+				   <td><b>Monthly Cost</b></td>
+				   <td></td>
+				   <td><b>1,672.75 USD</b></td>
+				   <td></td>
+				   <td></td>
+
+
+			   </tr>
+			   <tr>
+				   <td><b>12-Month Cost</b></td>
+				   	<td></td>
+				   <td><b>20,073.00 USD</b></td>
+				   <td></td>
+				   <td></td>
+			   </tr>
+			   </tfoot>
+		   </table>
+		   View the estimate: <a href="My Estimate - AWS Pricing Calculator.pdf" target="_blank">AWS Estimate</a>
+		  
+	  </p>
+	  </div>
+  
+
+    
+    </div>
+        
+    <footer>
+		<p style="padding-top: 30px">Handcrafted by Jenna Miller</p>
+	</footer>
+
+</div>
+   
+</body>
+</html>

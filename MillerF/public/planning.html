@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT PLANNING</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+		.wrapper::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.main {
+			float: left;
+			width: 50%;
+		}
+		@media screen and (max-width:830px) {
+		  .planning {
+		    width: 100%;
+		  }
+		}
+		@media screen and (max-width:770px) {
+			header h1 {
+				font-size: 28pt;
+			}
+				body {
+				font-size: 95%;
+			}
+		}
+
+	
+		ul, ol {
+			list-style-position: inside;
+		}
+		
+		.tab {
+			display: inline-block;
+			margin-left: 2em;
+			padding: 20px;
+		}
+		.wrapper {
+			padding: 20px;
+			border: 1px solid #1d2c56;
+			text-align: center;
+		}
+		h3 {
+			background-color: #465572;
+			opacity: 0.8;
+			border: 1px solid #1d2c56;
+			padding: 8px;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="page-header" >
+        
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-icon" for="toggle-menu">
+            <a id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </label>
+        
+        
+        <div id="navigation-bar" class="nav-bar">
+            <a href="main.html"> HOME </a>
+            <a href="background.html"> BACKGROUND </a>
+            <a href="risk.html"> RISK MANAGEMENT </a>
+            <a class="active" href="planning.html">PROJECT PLANNING </a>
+            <a href="estimates.html">COST</a>
+            <a href="citations.html">CITATIONS</a>
+        </div>   
+        </div>
+	
+	<header>
+		<h1>PLANNING YOUR CLOUD MIGRATION</h1>
+	</header>
+	
+	 <div class="container">
+		<div class="wrapper">
+			<div class="planning">
+			<h2>PROJECT PLANNING: STEPS FOR CLOUD MIGRATION</h2>
+			<p> Outlined below are the essential steps to successfully migrate your infrastructure 
+				to the cloud:
+			</p>
+			<ol>
+				<h3><li><span>Assessment and Analysis:</span></h3>
+				<p class="tab">
+					Evaulate your current infrastructure, applications, and data to sort out needs
+					and wants. Identify dependencies and risks associated with the migration.
+				</p>
+				</li><br>
+				<h3><li><span>Define Migration Strategy:</span></h3>
+				
+					<dl class="tab">
+						<dt><b>Refactor/Re-architect:</b></dt> 
+						<p>Alter the architecture to enhance agility, 
+						performance, and scalability. This typically involves porting the operating
+						system and database.<p>
+						<dt><b>Replatform (Lift and Reshape):</b> 
+						<p>Transfer an application to the cloud, incorporating some optimization.
+						</p></dt>
+						<dt><b>Repurchase (Drop and Shop):</b>
+						<p>
+							Replace the existing on-premises application with a SaaS solution available
+							in the cloud.
+						</p></dt>
+						<dt><b>Rehost (Lift and Shift):</b>
+						<p>
+							Migrate an application to the cloud without implementing changes.
+						</p></dt>
+						<dt><b>Relocate (Hypervisor-Level Lift and Shift):</b>
+						<p>
+							Shift infrastructure to the cloud without the need for new hardware, application
+							rewrites, or adjustments to current operations.
+						</p></dt>
+						<dt><b>Retain (Revisit):</b>
+						<p>
+							Keep the applications in their original environment and return to migration in
+							the future.
+						</p></dt>
+						<dt><b>Retire:</b>
+						<p>
+							Discontinue applications that are no longer needed, redundant, or obsolete.
+						</p></dt>
+						</dl>
+						
+					</li><br>
+	
+				<h3><li><span>Select Cloud Provider:</span></h3>
+				<p class="tab">
+					Research and choose a reliable cloud service provider based on your requirements, 
+					compliance needs, and budget.
+				</p></li><br>
+				<h3><li><span>Data Migration Plan:</span></h3>
+				<p class="tab">
+					Develop a comprehensive plan to securely transfer data to the cloud. Consider data transfer
+					methods, downtime, and data consistency.
+				</p></li><br>
+				<h3><li><span>Application Testing:</span></h3>
+				<p class="tab">
+					Test applications thoroughly in the cloud environment to ensure compatibility,
+					performance, and functionality.
+				</p></li><br>
+				<h3><li><span>Staff Training and Change Management:</span></h3>
+				<p class="tab">
+					Technology transformation is only successful so long as the people know how to use
+					it. Make sure to train employees extensively on cloud technologies, new processes, and
+					security protocols. The people involved are the most important factor in the migration, so
+					it's important to invest time and resources into change management.
+				</p></li><br>
+				<h3><li><span>Implement Monitoring and Compliance:</span></h3>
+				<p class="tab">
+					Set up tools to monitor performance, security, and compliance.
+				</p></li><br>
+				<h3><li><span>Deployment:</span></h3>
+				<p class="tab">
+					Deploy your applications and infrastructure to the cloud and continuously monitor and
+					optimize performance and cost-efficiency.
+				</p></li><br>
+
+			</ol>
+		</div>
+    </div>
+        
+    <footer>
+		<p style="padding-top: 30px">Handcrafted by Jenna Miller</p>
+	</footer>
+
+</div>
+   
+</body>
+</html>
