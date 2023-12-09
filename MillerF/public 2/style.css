@@ -1,0 +1,150 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14pt;
+	margin:0;
+	color: #1d2c56;
+	background-color: #a7bec7;
+	line-height: 1.6;
+}
+.page-header {
+    background-color: #a7bec7;
+    display: flex;
+    justify-content: space-between;
+  	padding-bottom: 9px;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    
+}
+.nav-bar a   {
+    color: #1d2c56;
+    font-size: 10.5pt;
+    font-weight: 700;
+    padding: 1.0em;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.nav-bar a:hover {
+	text-decoration: none !important;
+			  color: white !important;
+			  -webkit-transition: all 0.2s ease-in-out;
+			  -moz-transition: all 0.2s ease-in-out;
+			  -ms-transition: all 0.2s ease-in-out;
+			  -o-transition: all 0.2s ease-in-out;
+			  transition: all 0.2s ease-in-out;   
+}
+
+.nav-bar a.active {
+    background-color: #91e7da; 
+    opacity: 0.8;   
+    
+}
+
+.menu-icon {
+    color: #1d2c56;
+    cursor: pointer;
+    display: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#toggle-menu {
+    display: none;
+}
+header {
+    padding: 4em;
+	text-align:center;
+	background: #1d2c56;
+	color: white;
+}
+header h1 {
+			font-size: 35pt;
+		}
+
+header p{
+			font-size: 10pt;
+		}
+
+.wrapper {
+			background-color: white;
+			margin: 40px;
+		}
+@media screen and (max-width: 780px) {
+
+
+    .nav-bar {
+		display: none;
+        position: absolute;
+        top: 2.0rem;
+        left: 0;
+        width: 100%;
+        background-color: #1d2c56;
+        text-align: center; 
+    }
+
+    .nav-bar a {
+        display: block;
+        color: white;
+
+    }
+    
+    .nav-bar a:hover {
+	text-decoration: none !important;
+			  color: #a7bec7 !important;
+			  -webkit-transition: all 0.2s ease-in-out;
+			  -moz-transition: all 0.2s ease-in-out;
+			  -ms-transition: all 0.2s ease-in-out;
+			  -o-transition: all 0.2s ease-in-out;
+			  transition: all 0.2s ease-in-out; 
+
+  
+}
+
+    .menu-icon {
+        display: block;
+        z-index: 1;
+
+    }
+
+    #toggle-menu:checked ~ .nav-bar {
+        display: block;
+    }
+    header {
+		min-height: 210px;
+	}
+
+   
+
+}
+.container {
+			position: relative;
+			min-height: 100vh;
+		}
+/*.wrapper {
+	min-height: 100vh;
+	justify-content: space-between;
+}*/
+		
+footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 2.5rem;
+			text-align: center;
+			font-size: 10pt;
+			/*margin-top: 20px;*/
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
